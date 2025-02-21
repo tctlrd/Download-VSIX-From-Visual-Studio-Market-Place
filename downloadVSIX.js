@@ -113,7 +113,7 @@
 // 2nd 
 ***/
 (function() {
-    const URL_VSIX_PATTERN = 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${extension}/${version}/vspackage';
+    const URL_VSIX_PATTERN = 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${publisher}/vsextensions/${extension}/${version}/vspackage?targetPlatform=linux-x64';
     const itemName = new URL(window.location.href).searchParams.get('itemName');
     const [publisher, extension] = itemName.split('.');
     const version = document.querySelector('#versionHistoryTab tbody tr .version-history-container-column').textContent;
